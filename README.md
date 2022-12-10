@@ -1,39 +1,5 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/renoult/php-cli-boilerplate">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
 <h3 align="center">PHP CLI Boilerplate</h3>
 
   <p align="center">
@@ -42,8 +8,6 @@
     <a href="https://github.com/renoult/php-cli-boilerplate"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/renoult/php-cli-boilerplate">View Demo</a>
-    ·
     <a href="https://github.com/renoult/php-cli-boilerplate/issues">Report Bug</a>
     ·
     <a href="https://github.com/renoult/php-cli-boilerplate/issues">Request Feature</a>
@@ -83,14 +47,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `renoult`, `php-cli-boilerplate`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `PHP CLI Boilerplate`, `Minimalist PHP boilerplate for CLI projects.`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 ### Built With
 
 * [![PHP][PHP]][PHP-url]
@@ -123,9 +79,37 @@ They are called by `main.php` in root folder, then unit tested in `tests` folder
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+By default examples are provided in a Service and in Unit Tests.
+This section shows how to use examples, but feel free to remove and replace with your code.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Run script:
+```
+➜  php-cli-boilerplate git:(master) ✗ php main.php
+Hello World!
+```
+
+Run unit tests:
+```
+➜  php-cli-boilerplate git:(master) ✗ ./vendor/bin/phpunit tests
+PHPUnit 9.5.27 by Sebastian Bergmann and contributors.
+
+.                                                                   1 / 1 (100%)
+
+Time: 00:00.003, Memory: 4.00 MB
+
+OK (1 test, 1 assertion)
+```
+
+Verify coding style using [PSR-12](https://www.php-fig.org/psr/psr-12/):
+```
+➜  php-cli-boilerplate git:(master) ✗ ./vendor/bin/phpcs --standard=PSR12 tests src
+```
+
+These recommendations also apply for other PHP projects:
+
+* Use your IDE to indicate when your styling is incorrect, with PHPCS and PSR-12. This will save you time.
+* Maintain your code [SOLID](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/): break it down if a function or a class is getting large.
+* Follow [TTD](https://en.wikipedia.org/wiki/Test-driven_development): write unit tests first, then your code. This will slow you down initially but you will see design issues sooner.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,15 +118,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+(none)
 
 See the [open issues](https://github.com/renoult/php-cli-boilerplate/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -175,8 +155,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
 Project Link: [https://github.com/renoult/php-cli-boilerplate](https://github.com/renoult/php-cli-boilerplate)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -196,35 +174,6 @@ Project Link: [https://github.com/renoult/php-cli-boilerplate](https://github.co
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/renoult/php-cli-boilerplate.svg?style=for-the-badge
-[contributors-url]: https://github.com/renoult/php-cli-boilerplate/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/renoult/php-cli-boilerplate.svg?style=for-the-badge
-[forks-url]: https://github.com/renoult/php-cli-boilerplate/network/members
-[stars-shield]: https://img.shields.io/github/stars/renoult/php-cli-boilerplate.svg?style=for-the-badge
-[stars-url]: https://github.com/renoult/php-cli-boilerplate/stargazers
-[issues-shield]: https://img.shields.io/github/issues/renoult/php-cli-boilerplate.svg?style=for-the-badge
-[issues-url]: https://github.com/renoult/php-cli-boilerplate/issues
-[license-shield]: https://img.shields.io/github/license/renoult/php-cli-boilerplate.svg?style=for-the-badge
-[license-url]: https://github.com/renoult/php-cli-boilerplate/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
-[product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769ADsty?le=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
 [PHPUnit]: https://img.shields.io/badge/phpunit-3f9ed8?style=for-the-badge&logo=php&logoColor=white
 [PHPUnit-url]: https://phpunit.de/
 [PHP]: https://img.shields.io/badge/php-4c5b93?style=for-the-badge&logo=php&logoColor=white
